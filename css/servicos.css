@@ -1,0 +1,42 @@
+.main-lista{
+  margin: 100px 0 0 20px;
+  display: block;
+  background-color: #fff;
+ text-align: center;
+}
+.h3{
+  padding-top: 30px;
+}
+.container-myLista{
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-top: 100px;
+height: 60vh;
+}
+
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-basis: calc(50% - 10px); /* calcula a largura de cada lista */
+}
+
+.li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para tela menor que 600px */
+@media only screen and (max-width: 600px) {
+  .container-myLista {
+    flex-direction: column;
+  }
+
+  .ul {
+    flex-basis: 100%; /* a largura das listas é 100% em telas menores */
+  }
+}
